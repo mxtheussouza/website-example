@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+    fourdev-site:
+        build: .
+        image: fourdev-nodejs
+        container_name: fourdev-site
+        networks:
+            - fourdevnet
+
+    fourdev-nginx:
+        image: nginx:alpine
+        container_name: fourdev-nginx
+        working_dir: /app
+        volumes:
+            - ./.nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+        ports:
+            - 8383:80
+        depends_on:
+            - fourdev-site
+        networks:
+            - fourdevnet
+
+networks:
+    fourdevnet:
+        driver: bridge

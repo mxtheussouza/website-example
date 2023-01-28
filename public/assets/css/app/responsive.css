@@ -1,0 +1,207 @@
+@-webkit-keyframes balance {
+    from { top: 60px; }
+    to { top: 65px; }
+}
+
+@keyframes balance {
+    from { top: 60px; }
+    to { top: 65px; }
+}
+
+@media (max-width: 1100px) {
+    .content nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .content footer .content-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .content footer .content-footer .contact {
+        margin-bottom: 4rem;
+        width: 50%;
+    }
+
+    .content footer .content-footer .contact div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content footer .content-footer .contact input {
+        margin: .4rem 0;
+    }
+
+    .content footer .content-footer .contact textarea  {
+        margin-top: .4rem;
+    }
+
+    .content footer .content-footer .resume {
+        max-width: 50%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content .copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .content main .second-section {
+        padding-top: 3rem;
+    }
+
+    .content main .third-section .content-third-section .smartphone {
+        display: none;
+    }
+
+    .content main .third-section .content-third-section .apps {
+        background-image: none;
+        position: initial;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        padding: .4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .content main .third-section .content-third-section .apps .card-apps {
+        background-color: none;
+        display: flex;
+        width: 10rem;
+        height: 8rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        box-shadow: 0 0.25em 0 #c3c6d1;
+        border-radius: 0.75em;
+        border: 1px solid #c3c6d1;
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+        cursor: default;
+    }
+
+    .content main .third-section .content-third-section .apps .card-apps img {
+        width: 50%;
+        transform: none;
+    }
+
+    .tooltip {
+        position: unset;
+        top: auto;
+        z-index: 0;
+        background-image: none;
+        color: #333333;
+        text-align: center;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 0;
+        opacity: 1;
+        pointer-events: none;
+        box-shadow: none;
+        transition: none;
+    }
+
+    .tooltip:before {
+        display: none;
+    }
+}
+
+@media (max-width: 835px) {
+    .content nav {
+        background-color: #FFF;
+    }
+
+    .content nav .nav-menu {
+        display: none;
+    }
+
+    .content nav .nav-menu-mobile {
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0.25em 0 #c3c6d1;
+        border-bottom-left-radius: 0.75em;
+        border-bottom-right-radius: 0.75em;
+        background-color: #FFF;
+        padding-top: 1rem;
+    }
+
+    .content nav .nav-menu-mobile .nav-list-mobile .nav-item-mobile {
+        margin: 1rem 0;
+    }
+
+    .content nav .nav-menu-mobile .nav-list-mobile .nav-item-mobile .nav-link-mobile {
+        font-size: 1.8rem;
+        color: #333333;
+        font-weight: bold;
+        transition: 1s;
+    }
+
+    .content nav .nav-menu-mobile .nav-list-mobile .nav-item-mobile .nav-link-mobile:hover {
+        color: #6c63ff !important;
+    }
+
+    .toggle {
+        z-index: 1;
+        display: initial;
+        position: absolute;
+        top: 60px;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: #333333;
+        animation: balance 1.5s infinite;
+    }
+
+    .toggle-show {
+        display: flex !important;
+    }
+
+    .content footer .content-footer .contact {
+        width: 100%;
+    }
+
+    .content footer .content-footer .resume {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 803px) {
+    .content main .second-section .cards-second-section .card .card-text {
+        display: initial;
+        text-align: center;
+    }
+
+    .content main .second-section .cards-second-section .card .card-text p.pos {
+        display: initial;
+        text-align: center;
+    }
+
+    .content main .second-section .cards-second-section .card .card-text p.pre {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .content nav .logo {
+        font-size: 2.4rem;
+        color: #333333;
+    }
+
+    .content main .first-section .img-first-section {
+        width: 250px;
+    }
+}

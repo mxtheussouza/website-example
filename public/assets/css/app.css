@@ -1,0 +1,5 @@
+@import './app/reset.css';
+@import './app/style.css';
+@import './app/responsive.css';
+@import './libs/all.min.css';
+@import './libs/sweetalert2.min.css';
